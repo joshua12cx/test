@@ -1,0 +1,39 @@
+{
+  "features": [
+    "edad",
+    "edad_gestacion",
+    "imc",
+    "pam",
+    "hemoglobina",
+    "hipertension",
+    "diabetes",
+    "ant_fam_hiper"
+  ],
+  "threshold": 0.3799999999999999,
+  "modelos_base": [
+    "RF",
+    "CAT",
+    "XGB",
+    "LGBM",
+    "LR"
+  ],
+  "metamodelo": "LogisticRegression",
+  "balanceo": "SMOTE",
+  "criterio_umbral": "Elegido en el conjunto de validación: Recall ≥ 0.93 y máximo F1-score.",
+  "n_registros": 4574,
+  "metricas_test": {
+    "n_test": 687,
+    "sensibilidad": 0.9529411764705882,
+    "especificidad": 0.9219269102990033,
+    "precision": 0.6328125,
+    "vpn": 0.9928443649373881,
+    "f1": 0.7605633802816901,
+    "exactitud": 0.925764192139738,
+    "roc_auc": 0.9861051397303107,
+    "average_precision": 0.959823537148833,
+    "tp": 81,
+    "fn": 4,
+    "fp": 47,
+    "tn": 555
+  }
+}
